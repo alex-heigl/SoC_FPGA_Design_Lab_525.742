@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Wed Aug 17 18:16:46 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_lowlevel_dac_intfc_0_0 -prefix
-//               design_1_lowlevel_dac_intfc_0_0_ design_1_lowlevel_dac_intfc_0_0_sim_netlist.v
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:25:59 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_lowlevel_dac_intfc_0_0/design_1_lowlevel_dac_intfc_0_0_sim_netlist.v
 // Design      : design_1_lowlevel_dac_intfc_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,50 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "design_1_lowlevel_dac_intfc_0_0,lowlevel_dac_intfc,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "lowlevel_dac_intfc,Vivado 2022.1" *) 
+(* NotValidForBitStream *)
+module design_1_lowlevel_dac_intfc_0_0
+   (rst,
+    clk125,
+    data_word,
+    sdata,
+    lrck,
+    bclk,
+    mclk,
+    latched_data,
+    valid);
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input rst;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk125 CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk125, ASSOCIATED_RESET rst, ASSOCIATED_BUSIF data_in, FREQ_TOLERANCE_HZ -1, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk125;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME data_in, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]data_word;
+  output sdata;
+  output lrck;
+  output bclk;
+  output mclk;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TREADY" *) output latched_data;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TVALID" *) input valid;
+
+  wire bclk;
+  wire clk125;
+  wire [31:0]data_word;
+  wire latched_data;
+  wire lrck;
+  wire mclk;
+  wire rst;
+  wire sdata;
+
+  design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc U0
+       (.bclk_i_reg_0(bclk),
+        .clk125(clk125),
+        .data_word(data_word),
+        .latched_data(latched_data),
+        .lrck(lrck),
+        .mclk(mclk),
+        .rst(rst),
+        .sdata(sdata));
+endmodule
+
+(* ORIG_REF_NAME = "clkdivider" *) 
 module design_1_lowlevel_dac_intfc_0_0_clkdivider
    (\cnt_reg[1]_0 ,
     mclk,
@@ -263,49 +307,7 @@ module design_1_lowlevel_dac_intfc_0_0_clkdivider__parameterized0
         .O(toggle_bclk));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_1_lowlevel_dac_intfc_0_0,lowlevel_dac_intfc,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "lowlevel_dac_intfc,Vivado 2021.2" *) 
-(* NotValidForBitStream *)
-module design_1_lowlevel_dac_intfc_0_0
-   (rst,
-    clk125,
-    data_word,
-    sdata,
-    lrck,
-    bclk,
-    mclk,
-    latched_data,
-    valid);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input rst;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk125 CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk125, ASSOCIATED_RESET rst, ASSOCIATED_BUSIF data_in, FREQ_TOLERANCE_HZ -1, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk125;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME data_in, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]data_word;
-  output sdata;
-  output lrck;
-  output bclk;
-  output mclk;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TREADY" *) output latched_data;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 data_in TVALID" *) input valid;
-
-  wire bclk;
-  wire clk125;
-  wire [31:0]data_word;
-  wire latched_data;
-  wire lrck;
-  wire mclk;
-  wire rst;
-  wire sdata;
-
-  design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc U0
-       (.bclk_i_reg_0(bclk),
-        .clk125(clk125),
-        .data_word(data_word),
-        .latched_data(latched_data),
-        .lrck(lrck),
-        .mclk(mclk),
-        .rst(rst),
-        .sdata(sdata));
-endmodule
-
+(* ORIG_REF_NAME = "lowlevel_dac_intfc" *) 
 module design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc
    (sdata,
     latched_data,

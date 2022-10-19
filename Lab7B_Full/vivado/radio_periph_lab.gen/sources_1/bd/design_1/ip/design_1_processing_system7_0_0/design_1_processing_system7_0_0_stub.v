@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Mon Aug 15 20:04:02 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_processing_system7_0_0 -prefix
-//               design_1_processing_system7_0_0_ design_1_processing_system7_0_0_stub.v
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:26:03 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.v
 // Design      : design_1_processing_system7_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2021.2" *)
+(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2022.1" *)
 module design_1_processing_system7_0_0(UART1_TX, UART1_RX, USB0_PORT_INDCTL, 
   USB0_VBUS_PWRSELECT, USB0_VBUS_PWRFAULT, M_AXI_GP0_ARVALID, M_AXI_GP0_AWVALID, 
   M_AXI_GP0_BREADY, M_AXI_GP0_RREADY, M_AXI_GP0_WLAST, M_AXI_GP0_WVALID, M_AXI_GP0_ARID, 

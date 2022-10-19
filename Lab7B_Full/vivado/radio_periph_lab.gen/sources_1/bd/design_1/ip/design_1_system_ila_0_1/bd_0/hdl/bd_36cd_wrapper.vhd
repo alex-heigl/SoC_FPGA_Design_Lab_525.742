@@ -1,4 +1,4 @@
---Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Command: generate_target bd_36cd_wrapper.bd
 --Design : bd_36cd_wrapper

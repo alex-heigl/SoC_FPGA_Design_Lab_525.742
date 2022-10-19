@@ -1,10 +1,10 @@
--- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Mon Aug 15 20:04:10 2022
--- Host        : GBL6BRV2E running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_iic_0_0 -prefix
---               design_1_axi_iic_0_0_ design_1_axi_iic_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+-- Date        : Wed Oct 19 15:26:15 2022
+-- Host        : Nikolaus running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_sim_netlist.vhdl
 -- Design      : design_1_axi_iic_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -36,6 +36,8 @@ entity design_1_axi_iic_0_0_SRL_FIFO is
     Rc_fifo_wr_d : in STD_LOGIC;
     Rc_fifo_wr : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_SRL_FIFO : entity is "SRL_FIFO";
 end design_1_axi_iic_0_0_SRL_FIFO;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_SRL_FIFO is
@@ -1283,6 +1285,8 @@ entity design_1_axi_iic_0_0_address_decoder is
     gpo : in STD_LOGIC_VECTOR ( 0 to 0 );
     AXI_IP2Bus_WrAck2_reg : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_address_decoder : entity is "address_decoder";
 end design_1_axi_iic_0_0_address_decoder;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_address_decoder is
@@ -2678,12 +2682,14 @@ entity design_1_axi_iic_0_0_cdc_sync is
     sda_i : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_cdc_sync : entity is "cdc_sync";
 end design_1_axi_iic_0_0_cdc_sync;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_cdc_sync is
-  signal s_level_out_d1_cdc_to : STD_LOGIC;
-  signal s_level_out_d2 : STD_LOGIC;
-  signal s_level_out_d3 : STD_LOGIC;
+  signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\ : STD_LOGIC;
+  signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\ : STD_LOGIC;
+  signal Q : STD_LOGIC;
   signal \^scndry_out\ : STD_LOGIC;
   attribute ASYNC_REG : boolean;
   attribute ASYNC_REG of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\ : label is std.standard.true;
@@ -2715,7 +2721,7 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => sda_i,
-      Q => s_level_out_d1_cdc_to,
+      Q => Q,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2\: unisim.vcomponents.FDRE
@@ -2725,8 +2731,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d1_cdc_to,
-      Q => s_level_out_d2,
+      D => Q,
+      Q => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3\: unisim.vcomponents.FDRE
@@ -2736,8 +2742,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d2,
-      Q => s_level_out_d3,
+      D => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\,
+      Q => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\: unisim.vcomponents.FDRE
@@ -2747,7 +2753,7 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d3,
+      D => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\,
       Q => \^scndry_out\,
       R => '0'
     );
@@ -2781,9 +2787,9 @@ end design_1_axi_iic_0_0_cdc_sync_4;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_cdc_sync_4 is
   signal \^generate_level_p_s_cdc.single_bit.cross_plevel_in2scndry_s_level_out_d4_0\ : STD_LOGIC;
-  signal s_level_out_d1_cdc_to : STD_LOGIC;
-  signal s_level_out_d2 : STD_LOGIC;
-  signal s_level_out_d3 : STD_LOGIC;
+  signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\ : STD_LOGIC;
+  signal \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\ : STD_LOGIC;
+  signal Q_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_onehot_scl_state[7]_i_1\ : label is "soft_lutpair2";
   attribute ASYNC_REG : boolean;
@@ -2826,7 +2832,7 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => scl_i,
-      Q => s_level_out_d1_cdc_to,
+      Q => Q_0,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2\: unisim.vcomponents.FDRE
@@ -2836,8 +2842,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d1_cdc_to,
-      Q => s_level_out_d2,
+      D => Q_0,
+      Q => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3\: unisim.vcomponents.FDRE
@@ -2847,8 +2853,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d2,
-      Q => s_level_out_d3,
+      D => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d2\,
+      Q => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\,
       R => '0'
     );
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\: unisim.vcomponents.FDRE
@@ -2858,7 +2864,7 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => s_level_out_d3,
+      D => \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.s_level_out_d3\,
       Q => \^generate_level_p_s_cdc.single_bit.cross_plevel_in2scndry_s_level_out_d4_0\,
       R => '0'
     );
@@ -2898,6 +2904,8 @@ entity design_1_axi_iic_0_0_dynamic_master is
     Tx_fifo_rd : in STD_LOGIC;
     earlyAckHdr : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_dynamic_master : entity is "dynamic_master";
 end design_1_axi_iic_0_0_dynamic_master;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_dynamic_master is
@@ -3284,6 +3292,8 @@ entity design_1_axi_iic_0_0_interrupt_control is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_interrupt_control : entity is "interrupt_control";
 end design_1_axi_iic_0_0_interrupt_control;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_interrupt_control is
@@ -3624,6 +3634,8 @@ entity design_1_axi_iic_0_0_reg_interface is
     \cr_i_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \IIC2Bus_IntrEvent_reg[0]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_reg_interface : entity is "reg_interface";
 end design_1_axi_iic_0_0_reg_interface;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_reg_interface is
@@ -5660,6 +5672,8 @@ entity design_1_axi_iic_0_0_shift8 is
     s_axi_aclk : in STD_LOGIC;
     \data_int_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_shift8 : entity is "shift8";
 end design_1_axi_iic_0_0_shift8;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_shift8 is
@@ -6102,6 +6116,8 @@ entity design_1_axi_iic_0_0_soft_reset is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 1 downto 0 );
     Tx_fifo_rst : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_soft_reset : entity is "soft_reset";
 end design_1_axi_iic_0_0_soft_reset;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_soft_reset is
@@ -6298,6 +6314,8 @@ entity design_1_axi_iic_0_0_upcnt_n is
     \q_int_reg[10]_0\ : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_upcnt_n : entity is "upcnt_n";
 end design_1_axi_iic_0_0_upcnt_n;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_upcnt_n is
@@ -7399,6 +7417,8 @@ entity design_1_axi_iic_0_0_debounce is
     scl_i : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_debounce : entity is "debounce";
 end design_1_axi_iic_0_0_debounce;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_debounce is
@@ -7516,6 +7536,8 @@ entity design_1_axi_iic_0_0_iic_control is
     \FSM_sequential_state_reg[2]_1\ : in STD_LOGIC;
     \FSM_onehot_scl_state_reg[7]_1\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_iic_control : entity is "iic_control";
 end design_1_axi_iic_0_0_iic_control;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_iic_control is
@@ -9677,6 +9699,8 @@ entity design_1_axi_iic_0_0_slave_attachment is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     gpo : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_slave_attachment : entity is "slave_attachment";
 end design_1_axi_iic_0_0_slave_attachment;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_slave_attachment is
@@ -11400,6 +11424,8 @@ entity design_1_axi_iic_0_0_axi_lite_ipif is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     gpo : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_1_axi_iic_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_axi_lite_ipif is
@@ -11528,6 +11554,8 @@ entity design_1_axi_iic_0_0_filter is
     s_axi_aclk : in STD_LOGIC;
     sda_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_filter : entity is "filter";
 end design_1_axi_iic_0_0_filter;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_filter is
@@ -11617,6 +11645,8 @@ entity design_1_axi_iic_0_0_axi_ipif_ssp1 is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     gpo : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_axi_ipif_ssp1 : entity is "axi_ipif_ssp1";
 end design_1_axi_iic_0_0_axi_ipif_ssp1;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_axi_ipif_ssp1 is
@@ -11874,6 +11904,8 @@ entity design_1_axi_iic_0_0_iic is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_iic : entity is "iic";
 end design_1_axi_iic_0_0_iic;
 
 architecture STRUCTURE of design_1_axi_iic_0_0_iic is
@@ -12682,6 +12714,8 @@ entity design_1_axi_iic_0_0_axi_iic is
   attribute C_TEN_BIT_ADR of design_1_axi_iic_0_0_axi_iic : entity is 0;
   attribute C_TIMING_REG_WIDTH : integer;
   attribute C_TIMING_REG_WIDTH of design_1_axi_iic_0_0_axi_iic : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_iic_0_0_axi_iic : entity is "axi_iic";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_axi_iic_0_0_axi_iic : entity is "yes";
 end design_1_axi_iic_0_0_axi_iic;
@@ -12797,7 +12831,7 @@ entity design_1_axi_iic_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_axi_iic_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_axi_iic_0_0 : entity is "axi_iic,Vivado 2021.2";
+  attribute x_core_info of design_1_axi_iic_0_0 : entity is "axi_iic,Vivado 2022.1";
 end design_1_axi_iic_0_0;
 
 architecture STRUCTURE of design_1_axi_iic_0_0 is
@@ -12844,7 +12878,7 @@ architecture STRUCTURE of design_1_axi_iic_0_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of iic2intc_irpt : signal is "xilinx.com:signal:interrupt:1.0 INTERRUPT INTERRUPT";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of iic2intc_irpt : signal is "XIL_INTERFACENAME INTERRUPT, SENSITIVITY LEVEL_HIGH, PortWidth 1";
+  attribute x_interface_parameter of iic2intc_irpt : signal is "XIL_INTERFACENAME INTERRUPT, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
   attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_data_fifo:2.0
-// IP Revision: 7
+// IP Revision: 8
 
 `timescale 1ns/1ps
 
@@ -87,7 +87,7 @@ input wire m_axis_tready;
 output wire [31 : 0] m_axis_tdata;
 output wire [31 : 0] axis_rd_data_count;
 
-  axis_data_fifo_v2_0_7_top #(
+  axis_data_fifo_v2_0_8_top #(
     .C_FAMILY("zynq"),
     .C_AXIS_TDATA_WIDTH(32),
     .C_AXIS_TID_WIDTH(1),

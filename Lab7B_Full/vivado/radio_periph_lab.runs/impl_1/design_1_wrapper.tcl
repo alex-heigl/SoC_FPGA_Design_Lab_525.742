@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/impl_1/design_1_wrapper.tcl"
+  variable script "C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,35 +122,33 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.collectionResultDisplayLimit 0
-  set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
+  set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.cache/wt [current_project]
-  set_property parent.project_path C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.xpr [current_project]
+  set_property webtalk.parent_dir C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.cache/wt [current_project]
+  set_property parent.project_path C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/simple_fifo_1.0
-  C:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/alex_fifo_1.0
-  C:/Users/212581463/work/labs_2021_2/lab7b/ip_repo
+  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/simple_fifo_1.0
+  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/alex_fifo_1.0
+  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.cache/ip [current_project]
+  set_property ip_output_repo C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/212581463/work/labs_2021_2/lab7b/src/toplevel.xdc
+  read_xdc C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/src/toplevel.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -295,10 +293,10 @@ OPTRACE "route_design reports" START { REPORT }
 OPTRACE "route_design reports" END { }
 OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
-OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
-OPTRACE "route_design write_checkpoint" END { }
 } RESULT]
 if {$rc} {
+OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
+OPTRACE "route_design write_checkpoint" END { }
   write_checkpoint -force design_1_wrapper_routed_error.dcp
   step_failed route_design
   return -code error $RESULT

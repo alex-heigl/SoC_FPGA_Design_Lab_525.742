@@ -1,3 +1,138 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_system_ila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_system_ila_0_1 (xilinx.com:ip:system_ila:1.1) from (Rev. 11) to (Rev. 12)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection and Interface Information
+---------------------------------------
+
+Connection and Interface information can not be compared for deferred elaboration IPs.
+design_1_system_ila_0_1 may have connection or interface changes.
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0 (Rev. 10)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ps7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ps7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_full_radio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_full_radio_0_0 (jhu.edu:user:full_radio:1.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_broadcaster_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_broadcaster_0_0 (xilinx.com:ip:axis_broadcaster:1.1) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Oct 19 15:22:19 2022
+| Host         : Nikolaus running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_iic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_iic_0_0 (xilinx.com:ip:axi_iic:2.1) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021

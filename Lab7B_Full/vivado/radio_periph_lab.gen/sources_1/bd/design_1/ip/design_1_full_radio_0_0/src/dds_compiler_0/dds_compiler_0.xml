@@ -1086,7 +1086,7 @@
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>dds_compiler_v6_0_21</spirit:modelName>
+        <spirit:modelName>dds_compiler_v6_0_22</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_xbip_utils_3_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -1117,11 +1117,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 21 20:44:44 UTC 2022</spirit:value>
+            <spirit:value>Wed Oct 19 20:23:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c911b8e1</spirit:value>
+            <spirit:value>9:315e60ca</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1132,7 +1132,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c911b8e1</spirit:value>
+            <spirit:value>9:315e60ca</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1148,11 +1148,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 21 20:44:44 UTC 2022</spirit:value>
+            <spirit:value>Wed Oct 19 20:23:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c911b8e1</spirit:value>
+            <spirit:value>9:315e60ca</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1161,7 +1161,7 @@
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>dds_compiler_v6_0_21</spirit:modelName>
+        <spirit:modelName>dds_compiler_v6_0_22</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_xbip_utils_3_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -1192,11 +1192,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 21 20:44:45 UTC 2022</spirit:value>
+            <spirit:value>Wed Oct 19 20:23:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:42fdeef1</spirit:value>
+            <spirit:value>9:bab236da</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1212,11 +1212,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 21 20:44:45 UTC 2022</spirit:value>
+            <spirit:value>Wed Oct 19 20:23:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:42fdeef1</spirit:value>
+            <spirit:value>9:bab236da</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2222,13 +2222,6 @@
       <spirit:enumeration spirit:text="Packet Framing">Packet_Framing</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_2023072b</spirit:name>
-      <spirit:enumeration spirit:text="Not Required">Not_Required</spirit:enumeration>
-      <spirit:enumeration spirit:text="Chan ID Field">Chan_ID_Field</spirit:enumeration>
-      <spirit:enumeration spirit:text="User Field">User_Field</spirit:enumeration>
-      <spirit:enumeration spirit:text="User and Chan ID Field">User_and_Chan_ID_Field</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_pairs_27d1d409</spirit:name>
       <spirit:enumeration spirit:text="Auto">Auto</spirit:enumeration>
       <spirit:enumeration spirit:text="Distributed ROM">Distributed_ROM</spirit:enumeration>
@@ -2343,11 +2336,11 @@
       <spirit:file>
         <spirit:name>hdl/mult_gen_v12_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>mult_gen_v12_0_17</spirit:logicalName>
+        <spirit:logicalName>mult_gen_v12_0_18</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="mult_gen" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="955d4e16">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="mult_gen" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="b841474b">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -2403,7 +2396,7 @@
       <spirit:file>
         <spirit:name>hdl/dds_compiler_v6_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>dds_compiler_v6_0_21</spirit:logicalName>
+        <spirit:logicalName>dds_compiler_v6_0_22</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2483,11 +2476,11 @@
         <spirit:name>hdl/mult_gen_v12_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>mult_gen_v12_0_17</spirit:logicalName>
+        <spirit:logicalName>mult_gen_v12_0_18</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="mult_gen" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="955d4e16">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="mult_gen" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="b841474b">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -2547,7 +2540,7 @@
         <spirit:name>hdl/dds_compiler_v6_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>dds_compiler_v6_0_21</spirit:logicalName>
+        <spirit:logicalName>dds_compiler_v6_0_22</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2604,7 +2597,7 @@
     <spirit:parameter>
       <spirit:name>Frequency_Resolution</spirit:name>
       <spirit:displayName>Frequency Resolution</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Frequency_Resolution" spirit:order="7" spirit:minimum="0" spirit:maximum="1e+07">0.4</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Frequency_Resolution" spirit:order="7" spirit:minimum="4.44089e-07" spirit:maximum="1.5625e+07">0.4</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Noise_Shaping</spirit:name>
@@ -2704,7 +2697,7 @@
     <spirit:parameter>
       <spirit:name>M_PHASE_Has_TUSER</spirit:name>
       <spirit:displayName>PHASE Output</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M_PHASE_Has_TUSER" spirit:choiceRef="choice_pairs_2023072b" spirit:order="26">Not_Required</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.M_PHASE_Has_TUSER" spirit:choiceRef="choice_pairs_dac1efef" spirit:order="26">Not_Required</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>S_CONFIG_Sync_Mode</spirit:name>
@@ -3011,7 +3004,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>DDS Compiler</xilinx:displayName>
-      <xilinx:coreRevision>21</xilinx:coreRevision>
+      <xilinx:coreRevision>22</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_DATA.HAS_TKEEP" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_DATA.HAS_TREADY" xilinx:valueSource="auto"/>
@@ -3058,9 +3051,9 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="094edf63"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cd76125a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="bfad1ea7"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="2137b7fb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="bb51d09e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="edb76529"/>

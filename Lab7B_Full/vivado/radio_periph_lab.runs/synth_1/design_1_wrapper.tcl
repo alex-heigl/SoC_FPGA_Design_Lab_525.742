@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -80,45 +77,45 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.cache/wt [current_project]
-set_property parent.project_path C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.xpr [current_project]
+set_property webtalk.parent_dir C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.cache/wt [current_project]
+set_property parent.project_path C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths {
-  c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/simple_fifo_1.0
-  c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/alex_fifo_1.0
-  c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo
+  c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/simple_fifo_1.0
+  c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/alex_fifo_1.0
+  c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.cache/ip [current_project]
+set_property ip_output_repo c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/filt1.coe
-add_files C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/filt2.coe
-read_vhdl -library xil_defaultlib C:/Users/212581463/work/labs_2021_2/lab7b/src/toplevel.vhd
-add_files C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/bd_36cd_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/bd_36cd_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/filt1.coe
+add_files C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/filt2.coe
+read_vhdl -library xil_defaultlib C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/src/toplevel.vhd
+add_files C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_0/design_1_rst_ps7_0_125M_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/bd_36cd_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/bd_36cd_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -129,14 +126,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/212581463/work/labs_2021_2/lab7b/src/toplevel.xdc
-set_property used_in_implementation false [get_files C:/Users/212581463/work/labs_2021_2/lab7b/src/toplevel.xdc]
+read_xdc C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/src/toplevel.xdc
+set_property used_in_implementation false [get_files C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/src/toplevel.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+read_checkpoint -auto_incremental -incremental C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

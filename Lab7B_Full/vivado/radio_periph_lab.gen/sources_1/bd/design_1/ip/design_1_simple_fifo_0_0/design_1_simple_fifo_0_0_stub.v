@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Sun Aug 21 15:51:37 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:32:00 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/design_1_simple_fifo_0_0_stub.v
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/design_1_simple_fifo_0_0_stub.v
 // Design      : design_1_simple_fifo_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "simple_fifo_v1_0,Vivado 2021.2" *)
+(* x_core_info = "simple_fifo_v1_0,Vivado 2022.1" *)
 module design_1_simple_fifo_0_0(s00_axis_lite_aclk, s00_axis_lite_aresetn, 
   s00_axis_lite_awaddr, s00_axis_lite_awprot, s00_axis_lite_awvalid, 
   s00_axis_lite_awready, s00_axis_lite_wdata, s00_axis_lite_wstrb, s00_axis_lite_wvalid, 

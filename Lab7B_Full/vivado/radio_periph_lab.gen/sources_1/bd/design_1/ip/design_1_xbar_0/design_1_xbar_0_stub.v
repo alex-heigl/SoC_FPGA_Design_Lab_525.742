@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Wed Aug 17 18:17:08 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_xbar_0 -prefix
-//               design_1_xbar_0_ design_1_xbar_0_stub.v
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:31:14 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.v
 // Design      : design_1_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "axi_crossbar_v2_1_26_axi_crossbar,Vivado 2021.2" *)
+(* X_CORE_INFO = "axi_crossbar_v2_1_27_axi_crossbar,Vivado 2022.1" *)
 module design_1_xbar_0(aclk, aresetn, s_axi_awaddr, s_axi_awprot, 
   s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, s_axi_wready, 
   s_axi_bresp, s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arprot, s_axi_arvalid, 

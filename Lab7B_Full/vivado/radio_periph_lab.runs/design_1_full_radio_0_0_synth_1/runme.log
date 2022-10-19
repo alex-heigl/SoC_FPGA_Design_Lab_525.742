@@ -4,50 +4,51 @@
 
 
 
-****** Vivado v2021.2 (64-bit)
-  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
-  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source design_1_full_radio_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1224.293 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1277.898 ; gain = 9.953
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
-Command: synth_design -top design_1_full_radio_0_0 -part xc7z020clg400-1 -mode out_of_context
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_full_radio_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 75292
+INFO: [Synth 8-7075] Helper process launched with PID 11796
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.293 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1277.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_full_radio_0_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_full_radio_0_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'full_radio_v1_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:5' bound to instance 'U0' of component 'full_radio_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'full_radio_v1_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:5' bound to instance 'U0' of component 'full_radio_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'full_radio_v1_0_S00_AXI' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:5' bound to instance 'full_radio_v1_0_S00_AXI_inst' of component 'full_radio_v1_0_S00_AXI' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0_S00_AXI' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:295]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:425]
-WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:420]
-INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:59' bound to instance 'dds0' of component 'dds_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:467]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+INFO: [Synth 8-3491] module 'full_radio_v1_0_S00_AXI' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:5' bound to instance 'full_radio_v1_0_S00_AXI_inst' of component 'full_radio_v1_0_S00_AXI' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0_S00_AXI' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:295]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:425]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:420]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:59' bound to instance 'dds0' of component 'dds_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:467]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -95,17 +96,17 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:177]
-INFO: [Synth 8-256] done synthesizing module 'dds_compiler_0' (9#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
-INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:59' bound to instance 'dds1' of component 'dds_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:477]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:59' bound to instance 'dds1' of component 'dds_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -153,10 +154,10 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:177]
-INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (10#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
-INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:59' bound to instance 'fir0' of component 'fir_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:492]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:59' bound to instance 'fir0' of component 'fir_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_COMPONENT_NAME bound to: fir_compiler_0 - type: string 
@@ -227,11 +228,10 @@ INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/Users/212581463/wor
 	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
 	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
 	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:198]
-WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
-INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (26#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
-INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:59' bound to instance 'fir1' of component 'fir_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:504]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:59' bound to instance 'fir1' of component 'fir_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_COMPONENT_NAME bound to: fir_compiler_1 - type: string 
@@ -302,14 +302,16 @@ INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/Users/212581463/wor
 	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
 	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
 	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:198]
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler_1' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0_S00_AXI' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'design_1_full_radio_0_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
 WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
-INFO: [Synth 8-256] done synthesizing module 'fir_compiler_1' (29#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:291]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:293]
-INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0_S00_AXI' (30#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0' (31#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'design_1_full_radio_0_0' (32#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:291]
 WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized23 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized23 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized22 is either unconnected or has no load
@@ -412,67 +414,68 @@ WARNING: [Synth 8-7129] Port PIN[fab][12] in module addsub_mult_accum is either 
 WARNING: [Synth 8-7129] Port PIN[fab][11] in module addsub_mult_accum is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished RTL Elaboration : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 1601.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.516 . Memory (MB): peak = 1663.883 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
-Finished Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
-Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
-Finished Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
-Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_full_radio_0_0_propImpl.xdc].
+Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
+Finished Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
+Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
+Finished Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
+Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_full_radio_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_full_radio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1601.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1663.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 1601.371 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 1663.883 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished Constraint Validation : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1/U0. (constraint file  C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0/U0. (constraint file  C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1/U0. (constraint file  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0/U0. (constraint file  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/dds0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/dds1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_cos.i_addr_mod_stage1.mod_cos_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_sin.i_addr_mod_stage1.mod_sin_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_cos.i_addr_mod_stage1.mod_cos_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 1601.371 ; gain = 377.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1663.883 ; gain = 385.984
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized29) to 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
 INFO: [Synth 8-223] decloning instance 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized31) to 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
@@ -490,48 +493,6 @@ DSPs: 220 (col length:60)
 BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3971] The signal "\U0/full_radio_v1_0_S00_AXI_inst/fir1 /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
-INFO: [Synth 8-3971] The signal "\U0/full_radio_v1_0_S00_AXI_inst/fir1 /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1601.371 ; gain = 377.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1601.371 ; gain = 377.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1601.371 ; gain = 377.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 1601.371 ; gain = 377.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 
 *** Running vivado
@@ -539,50 +500,51 @@ Finished Final Netlist Cleanup
 
 
 
-****** Vivado v2021.2 (64-bit)
-  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
-  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source design_1_full_radio_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1224.152 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1279.219 ; gain = 9.195
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
-Command: synth_design -top design_1_full_radio_0_0 -part xc7z020clg400-1 -mode out_of_context
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_full_radio_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 84476
+INFO: [Synth 8-7075] Helper process launched with PID 7840
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1224.152 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1279.219 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_full_radio_0_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_full_radio_0_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'full_radio_v1_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:5' bound to instance 'U0' of component 'full_radio_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'full_radio_v1_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:5' bound to instance 'U0' of component 'full_radio_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'full_radio_v1_0_S00_AXI' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:5' bound to instance 'full_radio_v1_0_S00_AXI_inst' of component 'full_radio_v1_0_S00_AXI' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0_S00_AXI' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:295]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:425]
-WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:420]
-INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:59' bound to instance 'dds0' of component 'dds_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:467]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+INFO: [Synth 8-3491] module 'full_radio_v1_0_S00_AXI' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:5' bound to instance 'full_radio_v1_0_S00_AXI_inst' of component 'full_radio_v1_0_S00_AXI' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'full_radio_v1_0_S00_AXI' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:295]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:425]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:420]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:59' bound to instance 'dds0' of component 'dds_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:467]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -630,17 +592,17 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:177]
-INFO: [Synth 8-256] done synthesizing module 'dds_compiler_0' (9#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
-INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:59' bound to instance 'dds1' of component 'dds_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:477]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
-WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
-WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/synth/dds_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:59' bound to instance 'dds1' of component 'dds_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
 	Parameter C_MODULUS bound to: 9 - type: integer 
@@ -688,10 +650,10 @@ WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaratio
 	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
 	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:177]
-INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (10#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
-INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:59' bound to instance 'fir0' of component 'fir_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:492]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_22' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_22' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'dds_compiler_1' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/dds_compiler_1/synth/dds_compiler_1.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:59' bound to instance 'fir0' of component 'fir_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_COMPONENT_NAME bound to: fir_compiler_0 - type: string 
@@ -762,11 +724,10 @@ INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [c:/Users/212581463/wor
 	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
 	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
 	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:198]
-WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
-INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (26#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
-INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:59' bound to instance 'fir1' of component 'fir_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:504]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:59' bound to instance 'fir1' of component 'fir_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_COMPONENT_NAME bound to: fir_compiler_1 - type: string 
@@ -837,14 +798,16 @@ INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [c:/Users/212581463/wor
 	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
 	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
 	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:198]
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler_1' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0_S00_AXI' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'design_1_full_radio_0_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
 WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
-INFO: [Synth 8-256] done synthesizing module 'fir_compiler_1' (29#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/synth/fir_compiler_1.vhd:70]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:291]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:293]
-INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0_S00_AXI' (30#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'full_radio_v1_0' (31#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'design_1_full_radio_0_0' (32#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/synth/design_1_full_radio_0_0.vhd:84]
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_path_out_reg 
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/df7b/hdl/full_radio_v1_0_S00_AXI.vhd:291]
 WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized23 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized23 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized22 is either unconnected or has no load
@@ -947,67 +910,68 @@ WARNING: [Synth 8-7129] Port PIN[fab][12] in module addsub_mult_accum is either 
 WARNING: [Synth 8-7129] Port PIN[fab][11] in module addsub_mult_accum is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished RTL Elaboration : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.372 . Memory (MB): peak = 1601.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.567 . Memory (MB): peak = 1660.312 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
-Finished Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
-Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
-Finished Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
-Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_full_radio_0_0_propImpl.xdc].
+Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
+Finished Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir0/U0'
+Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
+Finished Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_full_radio_0_0/src/fir_compiler_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0'
+Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_full_radio_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_full_radio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1601.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1660.312 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.302 . Memory (MB): peak = 1601.543 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1660.312 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Constraint Validation : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1/U0. (constraint file  C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0/U0. (constraint file  C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1/U0. (constraint file  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0/U0. (constraint file  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/dont_touch.xdc, line 23).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/dds0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/dds1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/full_radio_v1_0_S00_AXI_inst/fir1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_cos.i_addr_mod_stage1.mod_cos_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_sin.i_addr_mod_stage1.mod_sin_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 WARNING: [Synth 8-6040] Register i_rtl.i_quarter_table.i_has_cos.i_addr_mod_stage1.mod_cos_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized29) to 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
 INFO: [Synth 8-223] decloning instance 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized31) to 'U0/full_radio_v1_0_S00_AXI_inst/fir1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
@@ -1033,25 +997,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-3971] The signal "\U0/full_radio_v1_0_S00_AXI_inst/fir1 /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "\U0/full_radio_v1_0_S00_AXI_inst/fir1 /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1069,41 +1033,60 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calc__parameterized0_40 | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_35                 | (PCIN+((D'+A')'*B')')' | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_34                 | (PCIN+((D'+A')'*B')')' | 30     | 9      | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_33                 | (C'+((D'+A')'*B')')'   | 30     | 11     | 0      | 25     | 48     | 1    | 1    | 1    | 1    | 1     | 1    | 1    | 
+|calc__parameterized0    | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_30                 | (PCIN+((D'+A')'*B')')' | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_29                 | (PCIN+((D'+A')'*B')')' | 30     | 9      | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc                    | (C'+((D'+A')'*B')')'   | 30     | 11     | 0      | 25     | 48     | 1    | 1    | 1    | 1    | 1     | 1    | 1    | 
+|calc__parameterized1_7  | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|calc__parameterized1    | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|full_radio_v1_0_S00_AXI | A*B                    | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|full_radio_v1_0_S00_AXI | A*B                    | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
 
 Report BlackBoxes: 
 +-+--------------+----------+
@@ -1133,32 +1116,30 @@ Report Cell Usage:
 |34    |FDSE      |    17|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.312 ; gain = 381.094
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 152 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:55 . Memory (MB): peak = 1601.543 ; gain = 377.391
-Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1601.543 ; gain = 377.391
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:02:04 . Memory (MB): peak = 1660.312 ; gain = 381.094
+Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1660.312 ; gain = 381.094
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1601.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1660.312 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1601.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1660.312 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 64 instances were transformed.
   RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 64 instances
 
-Synth Design complete, checksum: 46cf560e
+Synth Design complete, checksum: d9d18779
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:08 ; elapsed = 00:02:20 . Memory (MB): peak = 1601.543 ; gain = 377.391
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
-INFO: [Common 17-1381] The checkpoint 'C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_full_radio_0_0, cache-ID = 786942b22f81c35c
+synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:27 . Memory (MB): peak = 1660.312 ; gain = 381.094
+INFO: [Common 17-1381] The checkpoint 'C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_full_radio_0_0, cache-ID = 4ecfffd37193e7d8
 INFO: [Coretcl 2-1174] Renamed 152 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_full_radio_0_0_utilization_synth.rpt -pb design_1_full_radio_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 21 15:48:04 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 19 15:31:08 2022...

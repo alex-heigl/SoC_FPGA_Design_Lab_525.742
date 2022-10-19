@@ -53,7 +53,6 @@
 //
 //   Vivado Simulator (XSim)
 //   Cadence Xcelium Simulator
-//   Aldec Riviera-PRO Simulator
 //
 //------------------------------------------------------------------------------------
 `timescale 1ps/1ps
@@ -116,52 +115,6 @@ endmodule
 module design_1_xbar_0 (aclk,aresetn,s_axi_awaddr,s_axi_awprot,s_axi_awvalid,s_axi_awready,s_axi_wdata,s_axi_wstrb,s_axi_wvalid,s_axi_wready,s_axi_bresp,s_axi_bvalid,s_axi_bready,s_axi_araddr,s_axi_arprot,s_axi_arvalid,s_axi_arready,s_axi_rdata,s_axi_rresp,s_axi_rvalid,s_axi_rready,m_axi_awaddr,m_axi_awprot,m_axi_awvalid,m_axi_awready,m_axi_wdata,m_axi_wstrb,m_axi_wvalid,m_axi_wready,m_axi_bresp,m_axi_bvalid,m_axi_bready,m_axi_araddr,m_axi_arprot,m_axi_arvalid,m_axi_arready,m_axi_rdata,m_axi_rresp,m_axi_rvalid,m_axi_rready)
 (* integer foreign = "SystemC";
 *);
-  input bit aclk;
-  input bit aresetn;
-  input bit [31 : 0] s_axi_awaddr;
-  input bit [2 : 0] s_axi_awprot;
-  input bit [0 : 0] s_axi_awvalid;
-  output wire [0 : 0] s_axi_awready;
-  input bit [31 : 0] s_axi_wdata;
-  input bit [3 : 0] s_axi_wstrb;
-  input bit [0 : 0] s_axi_wvalid;
-  output wire [0 : 0] s_axi_wready;
-  output wire [1 : 0] s_axi_bresp;
-  output wire [0 : 0] s_axi_bvalid;
-  input bit [0 : 0] s_axi_bready;
-  input bit [31 : 0] s_axi_araddr;
-  input bit [2 : 0] s_axi_arprot;
-  input bit [0 : 0] s_axi_arvalid;
-  output wire [0 : 0] s_axi_arready;
-  output wire [31 : 0] s_axi_rdata;
-  output wire [1 : 0] s_axi_rresp;
-  output wire [0 : 0] s_axi_rvalid;
-  input bit [0 : 0] s_axi_rready;
-  output wire [95 : 0] m_axi_awaddr;
-  output wire [8 : 0] m_axi_awprot;
-  output wire [2 : 0] m_axi_awvalid;
-  input bit [2 : 0] m_axi_awready;
-  output wire [95 : 0] m_axi_wdata;
-  output wire [11 : 0] m_axi_wstrb;
-  output wire [2 : 0] m_axi_wvalid;
-  input bit [2 : 0] m_axi_wready;
-  input bit [5 : 0] m_axi_bresp;
-  input bit [2 : 0] m_axi_bvalid;
-  output wire [2 : 0] m_axi_bready;
-  output wire [95 : 0] m_axi_araddr;
-  output wire [8 : 0] m_axi_arprot;
-  output wire [2 : 0] m_axi_arvalid;
-  input bit [2 : 0] m_axi_arready;
-  input bit [95 : 0] m_axi_rdata;
-  input bit [5 : 0] m_axi_rresp;
-  input bit [2 : 0] m_axi_rvalid;
-  output wire [2 : 0] m_axi_rready;
-endmodule
-`endif
-
-`ifdef RIVIERA
-(* SC_MODULE_EXPORT *)
-module design_1_xbar_0 (aclk,aresetn,s_axi_awaddr,s_axi_awprot,s_axi_awvalid,s_axi_awready,s_axi_wdata,s_axi_wstrb,s_axi_wvalid,s_axi_wready,s_axi_bresp,s_axi_bvalid,s_axi_bready,s_axi_araddr,s_axi_arprot,s_axi_arvalid,s_axi_arready,s_axi_rdata,s_axi_rresp,s_axi_rvalid,s_axi_rready,m_axi_awaddr,m_axi_awprot,m_axi_awvalid,m_axi_awready,m_axi_wdata,m_axi_wstrb,m_axi_wvalid,m_axi_wready,m_axi_bresp,m_axi_bvalid,m_axi_bready,m_axi_araddr,m_axi_arprot,m_axi_arvalid,m_axi_arready,m_axi_rdata,m_axi_rresp,m_axi_rvalid,m_axi_rready)
   input bit aclk;
   input bit aresetn;
   input bit [31 : 0] s_axi_awaddr;

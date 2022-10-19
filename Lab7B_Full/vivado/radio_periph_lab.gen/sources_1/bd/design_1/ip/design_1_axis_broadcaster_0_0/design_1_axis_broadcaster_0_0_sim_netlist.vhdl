@@ -1,10 +1,10 @@
--- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Wed Aug 17 16:22:16 2022
--- Host        : GBL6BRV2E running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axis_broadcaster_0_0 -prefix
---               design_1_axis_broadcaster_0_0_ design_1_axis_broadcaster_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+-- Date        : Wed Oct 19 15:27:14 2022
+-- Host        : Nikolaus running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_sim_netlist.vhdl
 -- Design      : design_1_axis_broadcaster_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -94,6 +94,8 @@ entity design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 is
   attribute G_TASK_SEVERITY_INFO of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 0;
   attribute G_TASK_SEVERITY_WARNING : integer;
   attribute G_TASK_SEVERITY_WARNING of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is "top_design_1_axis_broadcaster_0_0";
   attribute P_TPAYLOAD_WIDTH : integer;
   attribute P_TPAYLOAD_WIDTH of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 32;
 end design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0;
@@ -159,7 +161,7 @@ entity design_1_axis_broadcaster_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_axis_broadcaster_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of design_1_axis_broadcaster_0_0 : entity is "top_design_1_axis_broadcaster_0_0,Vivado 2021.2";
+  attribute X_CORE_INFO of design_1_axis_broadcaster_0_0 : entity is "top_design_1_axis_broadcaster_0_0,Vivado 2022.1";
 end design_1_axis_broadcaster_0_0;
 
 architecture STRUCTURE of design_1_axis_broadcaster_0_0 is

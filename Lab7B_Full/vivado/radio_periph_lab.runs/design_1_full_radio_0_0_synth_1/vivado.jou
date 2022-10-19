@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2021.2 (64-bit)
-# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
-# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Aug 21 15:45:22 2022
-# Process ID: 74940
-# Current directory: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 19 15:28:21 2022
+# Process ID: 14948
+# Current directory: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1
 # Command line: vivado.exe -log design_1_full_radio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_full_radio_0_0.tcl
-# Log file: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.vds
-# Journal file: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1\vivado.jou
-# Running On: GBL6BRV2E, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 6, Host memory: 68466 MB
+# Log file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1/design_1_full_radio_0_0.vds
+# Journal file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_full_radio_0_0_synth_1\vivado.jou
+# Running On: Nikolaus, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 4, Host memory: 16971 MB
 #-----------------------------------------------------------
 source design_1_full_radio_0_0.tcl -notrace

@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Sat Aug 20 17:23:23 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_system_ila_0_1 -prefix
-//               design_1_system_ila_0_1_ design_1_system_ila_0_1_stub.v
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:32:11 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_stub.v
 // Design      : design_1_system_ila_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "bd_36cd,Vivado 2021.2" *)
+(* x_core_info = "bd_36cd,Vivado 2022.1" *)
 module design_1_system_ila_0_1(clk, SLOT_0_AXI_awaddr, SLOT_0_AXI_awprot, 
   SLOT_0_AXI_awvalid, SLOT_0_AXI_awready, SLOT_0_AXI_wdata, SLOT_0_AXI_wstrb, 
   SLOT_0_AXI_wvalid, SLOT_0_AXI_wready, SLOT_0_AXI_bresp, SLOT_0_AXI_bvalid, 

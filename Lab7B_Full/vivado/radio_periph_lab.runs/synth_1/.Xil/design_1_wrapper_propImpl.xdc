@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/212581463/work/labs_2021_2/lab7b/src/toplevel.xdc rfile:../../../../src/toplevel.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/src/toplevel.xdc rfile:../../../../src/toplevel.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { bclk }]; #IO_0_34 Sch=ac_bclk
 set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]

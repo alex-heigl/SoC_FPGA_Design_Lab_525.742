@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:fir_compiler:7.2
--- IP Revision: 17
+-- IP Revision: 18
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY fir_compiler_v7_2_17;
-USE fir_compiler_v7_2_17.fir_compiler_v7_2_17;
+LIBRARY fir_compiler_v7_2_18;
+USE fir_compiler_v7_2_18.fir_compiler_v7_2_18;
 
 ENTITY fir_compiler_1 IS
   PORT (
@@ -70,7 +70,7 @@ END fir_compiler_1;
 ARCHITECTURE fir_compiler_1_arch OF fir_compiler_1 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF fir_compiler_1_arch: ARCHITECTURE IS "yes";
-  COMPONENT fir_compiler_v7_2_17 IS
+  COMPONENT fir_compiler_v7_2_18 IS
     GENERIC (
       C_XDEVICEFAMILY : STRING;
       C_ELABORATION_DIR : STRING;
@@ -173,9 +173,11 @@ ARCHITECTURE fir_compiler_1_arch OF fir_compiler_1 IS
       event_s_reload_tlast_missing : OUT STD_LOGIC;
       event_s_reload_tlast_unexpected : OUT STD_LOGIC
     );
-  END COMPONENT fir_compiler_v7_2_17;
+  END COMPONENT fir_compiler_v7_2_18;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_DATA:S_AXIS_RELOAD, ASSOCIATED_RESET aresetn, ASSOCIATED_CLKEN aclken, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk_intf CLK";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_data_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DATA TDATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_data_tvalid: SIGNAL IS "XIL_INTERFACENAME M_AXIS_DATA, TDATA_NUM_BYTES 10, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_data_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DATA TVALID";
@@ -183,10 +185,8 @@ ARCHITECTURE fir_compiler_1_arch OF fir_compiler_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_data_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DATA TREADY";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_data_tvalid: SIGNAL IS "XIL_INTERFACENAME S_AXIS_DATA, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_data_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DATA TVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_DATA:S_AXIS_RELOAD, ASSOCIATED_RESET aresetn, ASSOCIATED_CLKEN aclken, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk_intf CLK";
 BEGIN
-  U0 : fir_compiler_v7_2_17
+  U0 : fir_compiler_v7_2_18
     GENERIC MAP (
       C_XDEVICEFAMILY => "zynq",
       C_ELABORATION_DIR => "./",

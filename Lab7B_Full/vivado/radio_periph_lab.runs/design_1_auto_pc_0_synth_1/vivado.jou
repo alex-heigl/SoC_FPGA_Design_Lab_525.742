@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 19 15:28:08 2022
+# Process ID: 16104
+# Current directory: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_auto_pc_0_synth_1
+# Command line: vivado.exe -log design_1_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_0.tcl
+# Log file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.vds
+# Journal file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_auto_pc_0_synth_1\vivado.jou
+# Running On: Nikolaus, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 4, Host memory: 16971 MB
+#-----------------------------------------------------------
+source design_1_auto_pc_0.tcl -notrace

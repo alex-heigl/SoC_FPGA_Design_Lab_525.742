@@ -8,7 +8,7 @@
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "scoped": "true",
       "synth_flow_mode": "None",
-      "tool_version": "2021.2",
+      "tool_version": "2022.1",
       "validated": "true"
     },
     "design_tree": {
@@ -234,7 +234,7 @@
           },
           "HAS_TREADY": {
             "value": "0",
-            "value_src": "default"
+            "value_src": "default_prop"
           },
           "HAS_TSTRB": {
             "value": "0",
@@ -254,7 +254,7 @@
           },
           "TDATA_NUM_BYTES": {
             "value": "4",
-            "value_src": "default"
+            "value_src": "default_prop"
           },
           "TDEST_WIDTH": {
             "value": "0",

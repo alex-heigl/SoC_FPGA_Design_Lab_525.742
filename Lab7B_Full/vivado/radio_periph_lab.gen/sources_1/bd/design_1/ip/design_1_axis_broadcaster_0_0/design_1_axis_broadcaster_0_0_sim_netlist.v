@@ -1,10 +1,10 @@
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Wed Aug 17 16:22:16 2022
-// Host        : GBL6BRV2E running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_axis_broadcaster_0_0 -prefix
-//               design_1_axis_broadcaster_0_0_ design_1_axis_broadcaster_0_0_sim_netlist.v
+// Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+// Date        : Wed Oct 19 15:27:14 2022
+// Host        : Nikolaus running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_sim_netlist.v
 // Design      : design_1_axis_broadcaster_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_axis_broadcaster_0_0,top_design_1_axis_broadcaster_0_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "top_design_1_axis_broadcaster_0_0,Vivado 2021.2" *) 
+(* CHECK_LICENSE_TYPE = "design_1_axis_broadcaster_0_0,top_design_1_axis_broadcaster_0_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "top_design_1_axis_broadcaster_0_0,Vivado 2022.1" *) 
 (* NotValidForBitStream *)
 module design_1_axis_broadcaster_0_0
    (aclk,
@@ -102,7 +102,7 @@ endmodule
 (* G_MASK_SS_TDEST = "64" *) (* G_MASK_SS_TID = "32" *) (* G_MASK_SS_TKEEP = "8" *) 
 (* G_MASK_SS_TLAST = "16" *) (* G_MASK_SS_TREADY = "1" *) (* G_MASK_SS_TSTRB = "4" *) 
 (* G_MASK_SS_TUSER = "128" *) (* G_TASK_SEVERITY_ERR = "2" *) (* G_TASK_SEVERITY_INFO = "0" *) 
-(* G_TASK_SEVERITY_WARNING = "1" *) (* P_TPAYLOAD_WIDTH = "32" *) 
+(* G_TASK_SEVERITY_WARNING = "1" *) (* ORIG_REF_NAME = "top_design_1_axis_broadcaster_0_0" *) (* P_TPAYLOAD_WIDTH = "32" *) 
 module design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0
    (aclk,
     aresetn,

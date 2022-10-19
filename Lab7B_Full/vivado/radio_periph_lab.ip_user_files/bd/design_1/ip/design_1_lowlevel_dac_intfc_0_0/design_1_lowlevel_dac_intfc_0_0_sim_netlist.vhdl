@@ -1,10 +1,10 @@
--- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Wed Aug 17 18:16:46 2022
--- Host        : GBL6BRV2E running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_lowlevel_dac_intfc_0_0 -prefix
---               design_1_lowlevel_dac_intfc_0_0_ design_1_lowlevel_dac_intfc_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+-- Date        : Wed Oct 19 15:25:59 2022
+-- Host        : Nikolaus running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_lowlevel_dac_intfc_0_0/design_1_lowlevel_dac_intfc_0_0_sim_netlist.vhdl
 -- Design      : design_1_lowlevel_dac_intfc_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,6 +21,8 @@ entity design_1_lowlevel_dac_intfc_0_0_clkdivider is
     clk125 : in STD_LOGIC;
     rst : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_lowlevel_dac_intfc_0_0_clkdivider : entity is "clkdivider";
 end design_1_lowlevel_dac_intfc_0_0_clkdivider;
 
 architecture STRUCTURE of design_1_lowlevel_dac_intfc_0_0_clkdivider is
@@ -324,6 +326,8 @@ entity design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc is
     rst : in STD_LOGIC;
     data_word : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc : entity is "lowlevel_dac_intfc";
 end design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc;
 
 architecture STRUCTURE of design_1_lowlevel_dac_intfc_0_0_lowlevel_dac_intfc is
@@ -1203,7 +1207,7 @@ entity design_1_lowlevel_dac_intfc_0_0 is
   attribute ip_definition_source : string;
   attribute ip_definition_source of design_1_lowlevel_dac_intfc_0_0 : entity is "package_project";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_lowlevel_dac_intfc_0_0 : entity is "lowlevel_dac_intfc,Vivado 2021.2";
+  attribute x_core_info of design_1_lowlevel_dac_intfc_0_0 : entity is "lowlevel_dac_intfc,Vivado 2022.1";
 end design_1_lowlevel_dac_intfc_0_0;
 
 architecture STRUCTURE of design_1_lowlevel_dac_intfc_0_0 is

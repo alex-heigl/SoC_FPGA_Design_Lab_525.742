@@ -1,55 +1,61 @@
 #-----------------------------------------------------------
-# Vivado v2021.2 (64-bit)
-# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
-# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Aug 21 15:48:29 2022
-# Process ID: 84416
-# Current directory: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 19 15:28:21 2022
+# Process ID: 15164
+# Current directory: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1
 # Command line: vivado.exe -log design_1_simple_fifo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_simple_fifo_0_0.tcl
-# Log file: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.vds
-# Journal file: C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1\vivado.jou
-# Running On: GBL6BRV2E, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 6, Host memory: 68466 MB
+# Log file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.vds
+# Journal file: C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1\vivado.jou
+# Running On: Nikolaus, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 4, Host memory: 16971 MB
 #-----------------------------------------------------------
 source design_1_simple_fifo_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1277.500 ; gain = 9.543
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
-Command: synth_design -top design_1_simple_fifo_0_0 -part xc7z020clg400-1 -mode out_of_context
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/simple_fifo_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo/alex_fifo_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_simple_fifo_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 66020
+INFO: [Synth 8-7075] Helper process launched with PID 9980
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4527]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4528]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4529]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4530]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4531]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4532]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4586]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4587]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:4588]
+WARNING: [Synth 8-9889] parameter declaration is not allowed here in this mode of verilog [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:5486]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1246.082 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1277.500 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_simple_fifo_0_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'design_1_simple_fifo_0_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:87]
 	Parameter C_S00_AXIS_STREAM_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXIS_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXIS_LITE_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'simple_fifo_v1_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:5' bound to instance 'U0' of component 'simple_fifo_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'simple_fifo_v1_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:59]
+INFO: [Synth 8-3491] module 'simple_fifo_v1_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:5' bound to instance 'U0' of component 'simple_fifo_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'simple_fifo_v1_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:59]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'simple_fifo_v1_0_S00_AXIS_LITE' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:5' bound to instance 'simple_fifo_v1_0_S00_AXIS_LITE_inst' of component 'simple_fifo_v1_0_S00_AXIS_LITE' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'simple_fifo_v1_0_S00_AXIS_LITE' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:88]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:226]
-INFO: [Synth 8-226] default block is never used [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:356]
-WARNING: [Synth 8-614] signal 'fifo_data_out' is read in the process but is not in the sensitivity list [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:351]
-WARNING: [Synth 8-614] signal 'fifo_count' is read in the process but is not in the sensitivity list [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:351]
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:171]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:219]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:220]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:221]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:222]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:224]
-INFO: [Synth 8-256] done synthesizing module 'simple_fifo_v1_0_S00_AXIS_LITE' (1#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:88]
-INFO: [Synth 8-3491] module 'ila_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:53' bound to instance 'ila' of component 'ila_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:190]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:67]
+INFO: [Synth 8-3491] module 'simple_fifo_v1_0_S00_AXIS_LITE' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:5' bound to instance 'simple_fifo_v1_0_S00_AXIS_LITE_inst' of component 'simple_fifo_v1_0_S00_AXIS_LITE' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'simple_fifo_v1_0_S00_AXIS_LITE' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:88]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:226]
+INFO: [Synth 8-226] default block is never used [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:356]
+WARNING: [Synth 8-614] signal 'fifo_data_out' is read in the process but is not in the sensitivity list [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:351]
+WARNING: [Synth 8-614] signal 'fifo_count' is read in the process but is not in the sensitivity list [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:351]
+INFO: [Synth 8-256] done synthesizing module 'simple_fifo_v1_0_S00_AXIS_LITE' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:88]
+INFO: [Synth 8-3491] module 'ila_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:53' bound to instance 'ila' of component 'ila_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:67]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: DEFAULT - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_CORE_TYPE bound to: 1 - type: integer 
@@ -60,8 +66,8 @@ INFO: [Synth 8-638] synthesizing module 'ila_0' [c:/Users/212581463/work/labs_20
 	Parameter C_TC_TYPE bound to: 0 - type: integer 
 	Parameter C_NUM_OF_PROBES bound to: 6 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 8192 - type: integer 
-	Parameter C_MAJOR_VERSION bound to: 2021 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 2 - type: integer 
+	Parameter C_MAJOR_VERSION bound to: 2022 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 1 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
 	Parameter C_CORE_MINOR_VER bound to: 2 - type: integer 
@@ -3152,64 +3158,70 @@ INFO: [Synth 8-638] synthesizing module 'ila_0' [c:/Users/212581463/work/labs_20
 	Parameter C_PROBE1021_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1022_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1023_TYPE bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'ila_v6_2_12_ila' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:5642' bound to instance 'U0' of component 'ila_v6_2_12_ila' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:4252]
-INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1524]
-INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (13#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1487]
-INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (14#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1487]
-INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
-INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (24#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
-INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
-INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (26#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
-INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106088]
-INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (28#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106088]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27837]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (33#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27837]
-WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:4249]
-INFO: [Synth 8-256] done synthesizing module 'ila_0' (53#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:67]
-INFO: [Synth 8-3491] module 'axis_data_fifo_0' declared at 'c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:58' bound to instance 'fifo' of component 'axis_data_fifo_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:201]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_7_top' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (54#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (55#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (56#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2343]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (57#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
-INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:491]
-WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3015]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (58#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
-INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
-INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
-INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (59#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (60#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (61#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (61#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (61#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (61#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
-WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
-WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (62#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (63#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2343]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_7_top' (64#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (65#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo'. This will prevent further optimization [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:201]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:190]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'simple_fifo_v1_0_S00_AXIS_LITE_inst'. This will prevent further optimization [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'simple_fifo_v1_0' (66#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'design_1_simple_fifo_0_0' (67#1) [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:87]
+INFO: [Synth 8-3491] module 'ila_v6_2_12_ila' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/hdl/ila_v6_2_syn_rfs.v:5639' bound to instance 'U0' of component 'ila_v6_2_12_ila' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:4252]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1523]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1523]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106148]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106148]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105998]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105998]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106087]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106087]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:67]
+INFO: [Synth 8-3491] module 'axis_data_fifo_0' declared at 'c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:53' bound to instance 'fifo' of component 'axis_data_fifo_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:201]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_8_top' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2342]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:493]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2342]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_8_top' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/axis_data_fifo_0/synth/axis_data_fifo_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'simple_fifo_v1_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'design_1_simple_fifo_0_0' (0#1) [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:171]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0_S00_AXIS_LITE.vhd:222]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/synth/ila_0.vhd:4249]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo'. This will prevent further optimization [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:201]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:190]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'simple_fifo_v1_0_S00_AXIS_LITE_inst'. This will prevent further optimization [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/8d5b/hdl/simple_fifo_v1_0.vhd:143]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U0'. This will prevent further optimization [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/synth/design_1_simple_fifo_0_0.vhd:165]
 WARNING: [Synth 8-7129] Port ACLK in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLKEN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
@@ -3268,7 +3280,7 @@ WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconne
 WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
 WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_aclk in module xpm_fifo_axis is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axis_aclk in module axis_data_fifo_v2_0_7_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_aclk in module axis_data_fifo_v2_0_8_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[99] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[98] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
@@ -3312,62 +3324,63 @@ WARNING: [Synth 8-7129] Port DOUTA_I[61] in module blk_mem_gen_v8_4_5_blk_mem_ou
 WARNING: [Synth 8-7129] Port DOUTA_I[60] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished RTL Elaboration : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.345 . Memory (MB): peak = 1698.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.510 . Memory (MB): peak = 1712.801 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 629 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U0/ila/U0'
-Finished Parsing XDC File [c:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U0/ila/U0'
-Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_simple_fifo_0_0_propImpl.xdc].
+Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U0/ila/U0'
+Finished Parsing XDC File [c:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_simple_fifo_0_0/src/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U0/ila/U0'
+Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_simple_fifo_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_simple_fifo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_simple_fifo_0_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_simple_fifo_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_simple_fifo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1698.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1712.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 456 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 408 instances
   CFGLUT5 => SRLC32E: 48 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1698.410 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.672 . Memory (MB): peak = 1712.801 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Constraint Validation : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0/ila/U0. (constraint file  C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/ila/U0. (constraint file  C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/dont_touch.xdc, line 14).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/ila. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/fifo/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/fifo/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
@@ -3944,7 +3957,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -3967,25 +3980,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-5784] Optimized 12 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 44 bits, new ram width 32 bits.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:10 ; elapsed = 00:02:18 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:02:49 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:19 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:02:50 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Technology Mapping : Time (s): cpu = 00:02:51 ; elapsed = 00:02:55 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -4041,37 +4054,37 @@ INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[2] to constant 0
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[1] to constant 0
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:27 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished IO Insertion : Time (s): cpu = 00:02:57 ; elapsed = 00:03:02 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:27 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:57 ; elapsed = 00:03:02 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:27 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:58 ; elapsed = 00:03:03 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:27 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:58 ; elapsed = 00:03:03 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:59 ; elapsed = 00:03:03 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:59 ; elapsed = 00:03:03 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -4089,52 +4102,50 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |   189|
 |2     |CFGLUT5  |   456|
-|3     |LUT1     |   105|
-|4     |LUT2     |   121|
-|5     |LUT3     |   346|
-|6     |LUT4     |   580|
-|7     |LUT5     |   252|
-|8     |LUT6     |  1424|
+|3     |LUT1     |   103|
+|4     |LUT2     |   219|
+|5     |LUT3     |   392|
+|6     |LUT4     |   594|
+|7     |LUT5     |   334|
+|8     |LUT6     |  1552|
 |9     |MUXF7    |    92|
-|10    |MUXF8    |     2|
+|10    |MUXF8    |     3|
 |11    |RAM64M   |    32|
 |12    |RAMB18E1 |     1|
 |13    |RAMB36E1 |    23|
 |15    |SRL16E   |   103|
 |16    |SRLC16E  |     2|
 |17    |SRLC32E  |    17|
-|18    |FDRE     |  4133|
+|18    |FDRE     |  4728|
 |19    |FDSE     |    21|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:59 ; elapsed = 00:03:03 . Memory (MB): peak = 1712.801 ; gain = 435.301
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1567 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:02:19 . Memory (MB): peak = 1698.410 ; gain = 452.328
-Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:28 . Memory (MB): peak = 1698.410 ; gain = 452.328
+Synthesis finished with 0 errors, 0 critical warnings and 3231 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:30 ; elapsed = 00:02:49 . Memory (MB): peak = 1712.801 ; gain = 435.301
+Synthesis Optimization Complete : Time (s): cpu = 00:02:59 ; elapsed = 00:03:04 . Memory (MB): peak = 1712.801 ; gain = 435.301
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1698.410 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 795 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1712.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 796 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1698.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1712.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 488 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 408 instances
   CFGLUT5 => SRLC32E: 48 instances
   RAM64M => RAM64M (RAMD64E(x4)): 32 instances
 
-Synth Design complete, checksum: faf3d4a9
+Synth Design complete, checksum: d1c3ee3b
 INFO: [Common 17-83] Releasing license: Synthesis
-230 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+232 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:28 ; elapsed = 00:02:42 . Memory (MB): peak = 1698.410 ; gain = 452.328
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
-INFO: [Common 17-1381] The checkpoint 'C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_simple_fifo_0_0, cache-ID = a648031a48a9a56e
+synth_design: Time (s): cpu = 00:03:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1712.801 ; gain = 435.301
+INFO: [Common 17-1381] The checkpoint 'C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_simple_fifo_0_0, cache-ID = 3e4e954b76b4049a
 INFO: [Coretcl 2-1174] Renamed 451 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/212581463/work/labs_2021_2/lab7b/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/SoC_FPGA_Design_Lab_525.742/Lab7B_Full/vivado/radio_periph_lab.runs/design_1_simple_fifo_0_0_synth_1/design_1_simple_fifo_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_simple_fifo_0_0_utilization_synth.rpt -pb design_1_simple_fifo_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 21 15:51:42 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 19 15:32:04 2022...

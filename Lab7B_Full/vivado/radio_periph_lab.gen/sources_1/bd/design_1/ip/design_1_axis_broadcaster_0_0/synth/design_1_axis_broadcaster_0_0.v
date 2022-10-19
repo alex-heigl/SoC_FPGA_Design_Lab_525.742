@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_broadcaster:1.1
-// IP Revision: 24
+// IP Revision: 25
 
-(* X_CORE_INFO = "top_design_1_axis_broadcaster_0_0,Vivado 2021.2" *)
+(* X_CORE_INFO = "top_design_1_axis_broadcaster_0_0,Vivado 2022.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_axis_broadcaster_0_0,top_design_1_axis_broadcaster_0_0,{}" *)
-(* CORE_GENERATION_INFO = "design_1_axis_broadcaster_0_0,top_design_1_axis_broadcaster_0_0,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_broadcaster,x_ipVersion=1.1,x_ipCoreRevision=24,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_NUM_MI_SLOTS=2,C_S_AXIS_TDATA_WIDTH=32,C_M_AXIS_TDATA_WIDTH=32,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=1,C_M_AXIS_TUSER_WIDTH=1,C_AXIS_SIGNAL_SET=0b00000000000000000000000000000010}" *)
+(* CORE_GENERATION_INFO = "design_1_axis_broadcaster_0_0,top_design_1_axis_broadcaster_0_0,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_broadcaster,x_ipVersion=1.1,x_ipCoreRevision=25,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_NUM_MI_SLOTS=2,C_S_AXIS_TDATA_WIDTH=32,C_M_AXIS_TDATA_WIDTH=32,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=1,C_M_AXIS_TUSER_WIDTH=1,C_AXIS_SIGNAL_SET=0b00000000000000000000000000000010}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_axis_broadcaster_0_0 (
   aclk,
