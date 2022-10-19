@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Aug 17 14:58:06 2022
+# Process ID: 2828
+# Current directory: c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/edit_simple_fifo_v1_0.runs/axis_data_fifo_0_synth_1
+# Command line: vivado.exe -log axis_data_fifo_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_data_fifo_0.tcl
+# Log file: c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/edit_simple_fifo_v1_0.runs/axis_data_fifo_0_synth_1/axis_data_fifo_0.vds
+# Journal file: c:/Users/212581463/work/labs_2021_2/lab7b/ip_repo/edit_simple_fifo_v1_0.runs/axis_data_fifo_0_synth_1\vivado.jou
+# Running On: GBL6BRV2E, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 6, Host memory: 68466 MB
+#-----------------------------------------------------------
+source axis_data_fifo_0.tcl -notrace
