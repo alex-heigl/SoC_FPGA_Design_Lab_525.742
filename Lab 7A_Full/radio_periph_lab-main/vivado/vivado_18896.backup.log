@@ -1,0 +1,757 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jul 31 11:14:36 2022
+# Process ID: 18896
+# Current directory: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15172 C:\Users\212581463\work\labs_2021_2\lab6\radio_periph_lab-main\vivado\radio_periph_lab.xpr
+# Log file: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/vivado.log
+# Journal file: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado\vivado.jou
+# Running On: GBL6BRV2E, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 6, Host memory: 68466 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1248.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_0
+Adding component instance block -- jhu.edu:user:full_radio:1.0 - full_radio_0
+Adding component instance block -- jhuapl.edu:user:lowlevel_dac_intfc:1.1 - lowlevel_dac_intfc_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_125M
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Successfully read diagram <design_1> from block design file <C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1248.043 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name full_radio_v1_0_project -directory C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1290.211 ; gain = 1.773
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-8049] The IP file 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.gen/sources_1/ip/dds_compiler_0'. Alternatively a copy of the IP can be imported into the project using the import_ip command.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1322.125 ; gain = 33.688
+update_compile_order -fileset sources_1
+# Create instance: dds_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+ERROR: [Common 17-165] Too many positional options when parsing 'dds_compiler_0', please type 'create_ip -help' for usage info.
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+ERROR: [Common 17-165] Too many positional options when parsing 'dds_compiler_0', please type 'create_ip -help' for usage info.
+create_ip -help
+create_ip
+
+Description: 
+Create an instance of a configurable IP and add it to the fileset
+
+Syntax: 
+create_ip  [-vlnv <arg>] -module_name <arg> [-dir <arg>] [-force]
+           [-allow_hidden] [-vendor <arg>] [-library <arg>] [-name <arg>]
+           [-version <arg>] [-revision <arg>] [-quiet] [-verbose]
+
+Returns: 
+list of file objects that were added
+
+Usage: 
+  Name             Description
+  ----------------------------
+  [-vlnv]          VLNV string for the Catalog IP from which the new IP will 
+                   be created (colon delimited Vendor, Library, Name, 
+                   Version)
+  -module_name     Name for the new IP that will be added to the project
+  [-dir]           Directory path for remote IP to be created and managed 
+                   outside the project
+  [-force]         Overwrite existing IP instance; allowed only with -dir 
+                   option
+  [-allow_hidden]  Allow hidden cores to be instantiated
+  [-vendor]        IP Vendor name
+  [-library]       IP Library name
+  [-name]          IP Name
+  [-version]       IP Version
+  [-revision]      (Optional) IP core revision
+  [-quiet]         Ignore command errors
+  [-verbose]       Suspend message limits during command execution
+
+Categories: 
+IPFlow
+
+Description:
+
+  This command creates an XCI file for a configurable IP core from the IP
+  catalog, and adds it to the source files of the current project. This
+  creates an IP source object which must be instantiated into the HDL design
+  to create an instance of the IP core in the netlist.
+
+  For multiple instances of the same core, simply instantiate the core module
+  into the HDL design as many times as needed. However, to use the same IP
+  core with different customizations, use the create_ip command to create
+  separate IP source objects.
+
+  The create_ip command is used to import IP cores from the current IP
+  catalog. Use the import_ip command to read existing XCI and XCO files
+  directly, without having to add IP to a catalog.
+
+  This command returns a transcript of the IP generation process, concluding
+  with the file path and name of the imported IP core file.
+
+  Note: IP cores are native to Vivado, and can be customized and regenerated
+  within that tool. The convert_ip command lets you to convert legacy IP to
+  native IP supported by Vivado.
+
+Arguments:
+
+  -vlnv <arg> - (Optional) Specifies the VLNV string for the existing Catalog
+  IP from which the new IP will be created. The VLNV is the
+  Vendor:Library:Name:Version string which identifies the IP in the catalog.
+  The VLNV string maps to the IPDEF property on the IP core.
+
+  Note: You must specify either -vlnv or all of -vendor, -library, -name, and
+  -version.
+
+  -module_name <arg> - (Required) Specifies the name for the new IP instance
+  that will be created. The module is created with the
+  <module_name>/<module_name>.xci naming convention.
+
+  -dir <arg> - (Optional) The directory to write the IP core files into. If
+  this option is not specified, the IP files (.xci, .veo...) are written in
+  the hierarchy of the <project_name>.srcs directory.
+
+  -force - (Optional) Overwrite an existing IP instance of the same
+  <module_name>, if one exists in the specified directory. All files
+  associated with the existing IP will be overwritten by files associated
+  with the newly created IP. This option can only be used with the -dir
+  option.
+
+  -vendor <arg> - (Optional) Specifies the vendor name for the IP`s creator.
+
+  -library <arg> - (Optional) Specifies the IP library from which the core
+  should be added.
+
+  -name <arg> - (Optional) Specifies the name of the IP core in the catalog.
+
+  -version <arg> - (Optional) Specifies the version number for the IP core.
+
+  Note: You must specify either -vlnv or all of -vendor, -library, -name, and
+  -version.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The example below imports the IP core specified by the -vlnv string, and
+  gives it the specified module name in the current project:
+
+    create_ip -vlnv xilinx.com:ip:c_addsub:11.0 -module_name test_addr 
+    
+
+  The following example, from Vivado, creates an IP block with the specified
+  -vendor, -library, -name, -version values, and assigns it the specified
+  module name. After the IP is created, attributes of the IP are customized
+  using set_property commands. Then the instantiation template and the
+  synthesis targets are generated for the IP:
+
+    create_ip -name c_addsub -version 11.0 -vendor xilinx.com -library ip \  
+       -module_name c_addsub_v11_0_0  
+    set_property CONFIG.COMPONENT_NAME  c_addsub_v11_0_0 \  
+       [get_ips c_addsub_v11_0_0]  
+    set_property CONFIG.A_WIDTH  32 [get_ips c_addsub_v11_0_0]  
+    set_property CONFIG.B_WIDTH 32 [get_ips c_addsub_v11_0_0]  
+    set_property CONFIG.ADD_MODE Add_Subtract [get_ips c_addsub_v11_0_0]  
+    set_property CONFIG.C_IN true [get_ips c_addsub_v11_0_0]  
+    generate_target  {instantiation_template synthesis} \  
+       [get_files C:/Data/c_addsub_v11_0_0/c_addsub_v11_0_0.xci \  
+       -of_objects [get_filesets sources_1]] 
+    
+
+See Also:
+
+   *  convert_ip
+   *  generate_target
+   *  import_ip
+   *  upgrade_ip
+   *  validate_ip
+# Create instance: dds_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+ERROR: [Common 17-165] Too many positional options when parsing 'dds_compiler_0', please type 'create_ip -help' for usage info.
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+ERROR: [Common 17-69] Command failed: IP name 'dds_compiler_0' is already in use in this project.  Please choose a different name.
+
+# Create instance: dds_compiler_1, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_1
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Sine_and_Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] $dds_compiler_1
+can't read "dds_compiler_1": no such variable
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_0]
+0
+update_compile_order -fileset sources_1
+# Create instance: filt1_lower_real, and set properties
+  create_ip -vlnv xilinx.com:ip:xlslice:1.0 -module_name filt1_lower_real
+WARNING: [Coretcl 2-1618] The 'xilinx.com:ip:xlslice:1.0' IP is intended for use in IPI only.
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/filt1_lower_real/filt1_lower_real.xci
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {31} \
+   CONFIG.DIN_TO {16} \
+   CONFIG.DIN_WIDTH {80} \
+   CONFIG.DOUT_WIDTH {16} \
+ ] $filt1_lower_real
+can't read "filt1_lower_real": no such variable
+update_compile_order -fileset sources_1
+# Create instance: fir_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_0
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt1.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {3} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {40} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] $fir_compiler_0
+can't read "fir_compiler_0": no such variable
+update_compile_order -fileset sources_1
+# Create instance: fir_compiler_1, and set properties
+  create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_1
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {1} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {64} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {3.125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab5/filt2.coe'
+0
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt1.coe} CONFIG.Filter_Type {Decimation} CONFIG.Decimation_Rate {40} CONFIG.Number_Paths {2} CONFIG.Sample_Frequency {125} CONFIG.Clock_Frequency {125} CONFIG.Data_Fractional_Bits {14} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {3}] [get_ips fir_compiler_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab6/filt1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab6/filt1.coe'
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_0'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_0: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_0'...
+catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+launch_runs fir_compiler_0_synth_1 -jobs 6
+[Mon Aug  1 18:11:26 2022] Launched fir_compiler_0_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/fir_compiler_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt2.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab6/filt2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab6/filt2.coe'
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_1'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_1: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_1'...
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs fir_compiler_1_synth_1 -jobs 6
+[Mon Aug  1 18:12:28 2022] Launched fir_compiler_1_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/fir_compiler_1_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+catch { config_ip_cache -export [get_ips -all dds_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+launch_runs dds_compiler_0_synth_1 -jobs 6
+[Mon Aug  1 18:13:23 2022] Launched dds_compiler_0_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/dds_compiler_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.DDS_Clock_Rate {125} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Phase_Width {27} CONFIG.Output_Width {16} CONFIG.Phase_Increment {Programmable} CONFIG.Amplitude_Mode {Unit_Circle} CONFIG.Has_Phase_Out {false} CONFIG.Has_ARESETn {true} CONFIG.PINC1 {0} CONFIG.Frequency_Resolution {0.4} CONFIG.Noise_Shaping {None} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Latency {7} CONFIG.Output_Frequency1 {0}] [get_ips dds_compiler_1]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'...
+catch { config_ip_cache -export [get_ips -all dds_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_runs dds_compiler_1_synth_1 -jobs 6
+[Mon Aug  1 18:15:22 2022] Launched dds_compiler_1_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/dds_compiler_1_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/filt1_lower_real/filt1_lower_real.xci] -no_script -reset -force -quiet
+remove_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/filt1_lower_real/filt1_lower_real.xci
+current_project radio_periph_lab
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo'.
+report_ip_status -name ip_status
+current_project full_radio_v1_0_project
+current_project radio_periph_lab
+open_bd_design {C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd}
+current_project full_radio_v1_0_project
+close_project
+ipx::edit_ip_in_project -upgrade true -name full_radio_v1_0_project -directory C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1565.688 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-8049] The IP file 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.gen/sources_1/ip/dds_compiler_0'. Alternatively a copy of the IP can be imported into the project using the import_ip command.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1565.688 ; gain = 0.000
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+ERROR: [Common 17-69] Command failed: IP name 'dds_compiler_0' is already in use in this project.  Please choose a different name.
+
+export_ip_user_files -of_objects  [get_files c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_0]
+0
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_1
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Sine_and_Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_1]
+0
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_0
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt1.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {3} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {40} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab5/filt1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab5/filt1.coe'
+0
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt1.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab6/filt1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab6/filt1.coe'
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_0'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_0: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_0'...
+catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+launch_runs fir_compiler_0_synth_1 -jobs 6
+[Mon Aug  1 19:13:21 2022] Launched fir_compiler_0_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/fir_compiler_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_1
+c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {1} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {64} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {3.125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab5/filt2.coe'
+0
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt2.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/212581463/work/labs_2021_2/lab6/filt2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../../../Users/212581463/work/labs_2021_2/lab6/filt2.coe'
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_1'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_1: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_1'...
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1604.941 ; gain = 39.254
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs fir_compiler_1_synth_1 -jobs 6
+[Mon Aug  1 19:14:58 2022] Launched fir_compiler_1_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/fir_compiler_1_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'...
+catch { config_ip_cache -export [get_ips -all dds_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_runs dds_compiler_1_synth_1 -jobs 6
+[Mon Aug  1 19:15:35 2022] Launched dds_compiler_1_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/dds_compiler_1_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+catch { config_ip_cache -export [get_ips -all dds_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+launch_runs dds_compiler_0_synth_1 -jobs 6
+[Mon Aug  1 19:16:17 2022] Launched dds_compiler_0_synth_1...
+Run output will be captured here: c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.runs/dds_compiler_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project radio_periph_lab
+close_project
+exit

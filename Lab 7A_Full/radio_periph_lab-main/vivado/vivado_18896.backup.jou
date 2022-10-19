@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jul 31 11:14:36 2022
+# Process ID: 18896
+# Current directory: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15172 C:\Users\212581463\work\labs_2021_2\lab6\radio_periph_lab-main\vivado\radio_periph_lab.xpr
+# Log file: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/vivado.log
+# Journal file: C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado\vivado.jou
+# Running On: GBL6BRV2E, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 6, Host memory: 68466 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name full_radio_v1_0_project -directory C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/component.xml
+update_compile_order -fileset sources_1
+# Create instance: dds_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+create_ip -help
+# Create instance: dds_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+# Create instance: dds_compiler_1, and set properties
+  create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_1
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Sine_and_Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] $dds_compiler_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_0]
+update_compile_order -fileset sources_1
+# Create instance: filt1_lower_real, and set properties
+  create_ip -vlnv xilinx.com:ip:xlslice:1.0 -module_name filt1_lower_real
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {31} \
+   CONFIG.DIN_TO {16} \
+   CONFIG.DIN_WIDTH {80} \
+   CONFIG.DOUT_WIDTH {16} \
+ ] $filt1_lower_real
+update_compile_order -fileset sources_1
+# Create instance: fir_compiler_0, and set properties
+  create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_0
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt1.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {3} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {40} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] $fir_compiler_0
+update_compile_order -fileset sources_1
+# Create instance: fir_compiler_1, and set properties
+  create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_1
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {1} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {64} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {3.125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_1]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt1.coe} CONFIG.Filter_Type {Decimation} CONFIG.Decimation_Rate {40} CONFIG.Number_Paths {2} CONFIG.Sample_Frequency {125} CONFIG.Clock_Frequency {125} CONFIG.Data_Fractional_Bits {14} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {3}] [get_ips fir_compiler_0]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+launch_runs fir_compiler_0_synth_1 -jobs 6
+wait_on_run fir_compiler_0_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt2.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs fir_compiler_1_synth_1 -jobs 6
+wait_on_run fir_compiler_1_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+catch { config_ip_cache -export [get_ips -all dds_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+launch_runs dds_compiler_0_synth_1 -jobs 6
+wait_on_run dds_compiler_0_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.DDS_Clock_Rate {125} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Phase_Width {27} CONFIG.Output_Width {16} CONFIG.Phase_Increment {Programmable} CONFIG.Amplitude_Mode {Unit_Circle} CONFIG.Has_Phase_Out {false} CONFIG.Has_ARESETn {true} CONFIG.PINC1 {0} CONFIG.Frequency_Resolution {0.4} CONFIG.Noise_Shaping {None} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Latency {7} CONFIG.Output_Frequency1 {0}] [get_ips dds_compiler_1]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all dds_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_runs dds_compiler_1_synth_1 -jobs 6
+wait_on_run dds_compiler_1_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/filt1_lower_real/filt1_lower_real.xci] -no_script -reset -force -quiet
+remove_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/filt1_lower_real/filt1_lower_real.xci
+current_project radio_periph_lab
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project full_radio_v1_0_project
+current_project radio_periph_lab
+open_bd_design {C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd}
+current_project full_radio_v1_0_project
+close_project
+ipx::edit_ip_in_project -upgrade true -name full_radio_v1_0_project -directory C:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/component.xml
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+export_ip_user_files -of_objects  [get_files c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_0
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_0]
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_1
+  set_property -dict [ list \
+   CONFIG.Amplitude_Mode {Unit_Circle} \
+   CONFIG.DATA_Has_TLAST {Not_Required} \
+   CONFIG.DDS_Clock_Rate {125} \
+   CONFIG.Has_ARESETn {true} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Negative_Cosine {false} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Sine_and_Cosine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Increment {Programmable} \
+   CONFIG.Phase_Width {27} \
+   CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+ ] [get_ips dds_compiler_1]
+update_compile_order -fileset sources_1
+create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_0
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt1.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {3} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {40} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_0]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt1.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_0]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+launch_runs fir_compiler_0_synth_1 -jobs 6
+wait_on_run fir_compiler_0_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir_compiler_1
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {125} \
+   CONFIG.CoefficientSource {COE_File} \
+   CONFIG.Coefficient_File {c:/Users/212581463/work/labs_2021_2/lab5/filt2.coe} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {1} \
+   CONFIG.Data_Width {16} \
+   CONFIG.Decimation_Rate {64} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Decimation} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Number_Paths {2} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Sample_Frequency {3.125} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] [get_ips fir_compiler_1]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coefficient_File {C:/Users/212581463/work/labs_2021_2/lab6/filt2.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs fir_compiler_1_synth_1 -jobs 6
+wait_on_run fir_compiler_1_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all dds_compiler_1] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+launch_runs dds_compiler_1_synth_1 -jobs 6
+wait_on_run dds_compiler_1_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+catch { config_ip_cache -export [get_ips -all dds_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+launch_runs dds_compiler_0_synth_1 -jobs 6
+wait_on_run dds_compiler_0_synth_1
+export_simulation -of_objects [get_files c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/212581463/work/labs_2021_2/lab6/radio_periph_lab-main/vivado/radio_periph_lab.tmp/full_radio_v1_0_project/full_radio_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project radio_periph_lab
+close_project
