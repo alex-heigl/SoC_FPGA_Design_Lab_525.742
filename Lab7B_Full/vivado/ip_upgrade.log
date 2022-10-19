@@ -1,0 +1,218 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Aug 21 15:40:39 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Aug 21 15:40:39 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_full_radio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_full_radio_0_0 (jhu.edu:user:full_radio:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Aug 21 14:52:56 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Aug 20 17:07:08 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Aug 20 15:24:06 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Aug 20 14:13:00 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Aug 17 22:53:41 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Aug 17 18:00:43 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_simple_fifo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_simple_fifo_0_0 (ge.com:user:simple_fifo:1.0) from (Rev. 1) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_simple_fifo_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's00_axis_stream_tlast'
+
+-Upgrade has removed port 's00_axis_stream_tstrb'
+
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Aug 17 17:14:36 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_full_radio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_full_radio_0_0 (jhu.edu:user:full_radio:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Aug 17 16:18:48 2022
+| Host         : GBL6BRV2E running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_full_radio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_full_radio_0_0 (jhu.edu:user:full_radio:1.0 (Rev. 9)) to Vivado generation flows.
+
